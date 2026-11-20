@@ -1,4 +1,4 @@
-# abel-marube.github.io
+# snipher-marube.github.io
 
 Personal portfolio. Static HTML styled with Tailwind CSS, deployed to GitHub Pages.
 
