@@ -91,11 +91,23 @@
             <h3 class="text-xl font-semibold">DawaTrack</h3>
             <p class="mt-1 text-sm text-neutral-500">Health product traceability</p>
             <a class="project-link mt-3 inline-block" href="https://dawatrack.com/" target="_blank" rel="noopener noreferrer">dawatrack.com</a>
-            <p class="mt-2 text-sm text-neutral-500">Founder. Sandbox-verified, Nov 2026</p>
+            <dl class="mt-4 space-y-2 text-sm">
+              <div><dt class="text-neutral-500">Role</dt><dd class="font-medium">Founder and sole engineer</dd></div>
+              <div><dt class="text-neutral-500">Status</dt><dd class="font-medium">National sandbox checks passed, Nov 2026</dd></div>
+            </dl>
           </div>
           <div class="text-neutral-700">
-            <p>Reporting platform that submits medicine traceability events to Kenya's national Track &amp; Trace system on behalf of distributors, wholesalers, importers and pharmacy software vendors.</p>
-            <p class="mt-3">Events come in from SAP Business One, CSV uploads, a partner API or warehouse scans. Each one is validated before submission, and anything incomplete (a missing GLN or expiry date, for example) is held with the reason attached. Submissions use GS1 EPCIS 2.0 and every response from the national system is stored.</p>
+            <p>Reporting platform that submits medicine traceability events to Kenya's national Track &amp; Trace system for distributors, wholesalers, importers and pharmacy software vendors. GS1 DataMatrix reporting becomes mandatory in Kenya from January 2027.</p>
+            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-500">How it's built</h4>
+            <ul class="mt-2 list-disc space-y-2 pl-5 marker:text-moss-600">
+              <li>One ingestion layer for four sources: SAP Business One, CSV uploads, a partner REST API and warehouse barcode scans. All of them are normalised into a single event model in PostgreSQL, so validation and reporting only have to be written once.</li>
+              <li>Validation runs before anything leaves the system. GS1 identifiers (GTIN, SSCC, GLN) and DataMatrix fields are parsed and checked, and an incomplete event, such as one missing a GLN or expiry date, is held with a specific reason instead of being rejected by the national endpoint.</li>
+              <li>Valid events are serialised to GS1 EPCIS 2.0 and submitted under each business's own national key. Every response from the national system is stored against its event, which gives each client a full audit trail.</li>
+              <li>A separate sandbox environment lets integrators and pharmacy software vendors test their data end to end before going live.</li>
+            </ul>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="tag">Django</span><span class="tag">Django REST Framework</span><span class="tag">PostgreSQL</span><span class="tag">Celery</span><span class="tag">Redis</span><span class="tag">GS1 EPCIS 2.0</span><span class="tag">Linux VPS</span><span class="tag">Sentry</span>
+            </div>
           </div>
         </article>
 
