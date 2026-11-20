@@ -116,11 +116,24 @@
             <h3 class="text-xl font-semibold">Waks.ai</h3>
             <p class="mt-1 text-sm text-neutral-500">Voice and SMS access to local opportunities</p>
             <a class="project-link mt-3 inline-block" href="https://waks.ai/" target="_blank" rel="noopener noreferrer">waks.ai</a>
-            <p class="mt-2 text-sm text-neutral-500">Pilot live in Makadara, Nairobi</p>
+            <dl class="mt-4 space-y-2 text-sm">
+              <div><dt class="text-neutral-500">Role</dt><dd class="font-medium">Lead engineer, team project</dd></div>
+              <div><dt class="text-neutral-500">Status</dt><dd class="font-medium">Pilot live in Makadara, Nairobi, independently evaluated</dd></div>
+            </dl>
           </div>
           <div class="text-neutral-700">
-            <p>Connects young people to catering courses, ward bursaries and local jobs over a plain phone call. No app, data bundle or airtime needed.</p>
-            <p class="mt-3">A user dials a USSD code or gives a missed call, gets a free callback, and can talk in Kiswahili, Sheng or English. They then receive an SMS with matching options, fares and an anonymous referral code. Answers come only from a reviewed catalogue, and a validator rejects any response that doesn't cite a catalogue entry.</p>
+            <p>Connects young people in Makadara sub-county to catering courses, ward bursaries and local jobs over a plain phone call. No app, data bundle or airtime needed, and callers can speak Kiswahili, Sheng or English.</p>
+            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-500">How it's built</h4>
+            <ul class="mt-2 list-disc space-y-2 pl-5 marker:text-moss-600">
+              <li>Two entry points, one flow. A USSD session or a missed call both hit Africa's Talking webhooks, which trigger a free toll-free callback. The user's session carries through from the menu to the call to the follow-up SMS with their options, fares and referral code.</li>
+              <li>Answers are grounded in a reviewed catalogue. Every option a caller hears or receives must reference a catalogue entry, and a validator blocks any response without one before it is spoken or sent. The service cannot promise a bursary or job that does not exist.</li>
+              <li>The catalogue is built per sub-county from public documents, and each entry is approved by an analyst before it goes live.</li>
+              <li>Privacy is part of the data model. Consent is asked first, questions are limited to what each programme's eligibility rules need, referral codes do not identify the caller, and county officials only see aggregate figures.</li>
+              <li>Callbacks and SMS run as background jobs, so a slow carrier response never holds up a live session.</li>
+            </ul>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="tag">Django</span><span class="tag">PostgreSQL</span><span class="tag">Africa's Talking (USSD, SMS, Voice)</span><span class="tag">Celery</span><span class="tag">Redis</span>
+            </div>
           </div>
         </article>
 
