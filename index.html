@@ -3,24 +3,82 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Snipher Marube | Full-stack Software Engineer</title>
-  <meta name="description" content="Snipher Marube, full-stack software engineer in Nairobi. Python, Django, PostgreSQL, Celery and Redis. Six platforms built and running in production.">
+  <title>Snipher Marube | Full-stack Software Engineer (Python, Django)</title>
+  <meta name="description" content="Snipher Marube is a full-stack software engineer in Nairobi, Kenya, building Python and Django platforms with PostgreSQL, Celery and Redis. Six projects in production, including DawaTrack and Waks.ai.">
+  <meta name="author" content="Snipher Marube">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f6f7f4">
+  <link rel="canonical" href="https://snipher-marube.github.io/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Snipher Marube">
   <meta property="og:title" content="Snipher Marube | Full-stack Software Engineer">
   <meta property="og:description" content="Python and Django engineer in Nairobi. Six platforms built and running in production.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/snipher-marube.jpg">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111a17'/%3E%3Ctext x='16' y='21.5' font-family='monospace' font-size='14' font-weight='700' fill='%23f6f7f4' text-anchor='middle'%3ESM%3C/text%3E%3C/svg%3E">
+  <meta property="og:url" content="https://snipher-marube.github.io/">
+  <meta property="og:image" content="https://snipher-marube.github.io/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Snipher Marube, full-stack software engineer">
+  <meta property="og:locale" content="en_KE">
+  <meta property="profile:first_name" content="Snipher">
+  <meta property="profile:last_name" content="Marube">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@snipherdev">
+  <meta name="twitter:creator" content="@snipherdev">
+  <meta name="twitter:title" content="Snipher Marube | Full-stack Software Engineer">
+  <meta name="twitter:description" content="Python and Django engineer in Nairobi. Six platforms built and running in production.">
+  <meta name="twitter:image" content="https://snipher-marube.github.io/assets/img/og-image.jpg">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/snipher-marube-400.jpg" imagesrcset="assets/img/snipher-marube-400.jpg 400w, assets/img/snipher-marube.jpg 800w" imagesizes="(min-width: 640px) 288px, 160px">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Snipher Marube",
+  "url": "https://snipher-marube.github.io/",
+  "image": "https://snipher-marube.github.io/assets/img/snipher-marube.jpg",
+  "jobTitle": "Full-stack Software Engineer",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "sameAs": [
+    "https://github.com/snipher-marube",
+    "https://www.linkedin.com/in/abel-marube-2653403a1",
+    "https://x.com/snipherdev"
+  ],
+  "knowsAbout": [
+    "Python",
+    "Django",
+    "Django REST Framework",
+    "PostgreSQL",
+    "MySQL",
+    "Celery",
+    "Redis",
+    "GitHub Actions",
+    "Sentry",
+    "REST APIs"
+  ]
+}
+  </script>
 </head>
 <body>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-ink focus:px-4 focus:py-2 focus:text-paper">Skip to main content</a>
 
   <header class="border-b border-line">
     <div class="mx-auto flex max-w-page flex-wrap items-center justify-between gap-4 px-5 py-5 sm:px-8">
-      <a href="#" class="font-mono text-[15px] font-medium">snipher.marube</a>
-      <nav aria-label="Main" class="flex gap-6 text-[15px] text-neutral-600">
+      <a href="#main" class="font-mono text-[15px] font-medium" aria-label="Snipher Marube, back to top">snipher.marube</a>
+      <nav aria-label="Main" class="flex flex-wrap gap-x-6 gap-y-2 text-[15px] text-neutral-700">
         <a href="#projects" class="hover:text-ink">Projects</a>
         <a href="#open-source" class="hover:text-ink">Open source</a>
         <a href="#stack" class="hover:text-ink">Stack</a>
@@ -29,12 +87,12 @@
     </div>
   </header>
 
-  <main>
+  <main id="main" tabindex="-1" class="focus:outline-none">
     <!-- Intro -->
-    <section class="mx-auto grid max-w-page items-center gap-10 px-5 pb-14 pt-12 sm:px-8 md:grid-cols-[1fr_auto] md:gap-16 md:pt-20">
+    <section aria-label="Introduction" class="mx-auto grid max-w-page items-center gap-10 px-5 pb-14 pt-12 sm:px-8 md:grid-cols-[1fr_auto] md:gap-16 md:pt-20">
       <div>
         <p class="font-mono text-sm text-moss-700">Full-stack software engineer, Nairobi</p>
-        <h1 class="mt-4 text-5xl font-bold tracking-tight sm:text-6xl">Snipher Marube</h1>
+        <h1 class="mt-4 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">Snipher Marube</h1>
         <p class="mt-6 max-w-xl text-lg leading-relaxed text-neutral-700">
           I build web platforms with Python and Django and keep them running in production.
           Most of my work sits on the backend: data models, REST APIs, background jobs,
@@ -43,43 +101,46 @@
         </p>
         <div class="mt-8 flex flex-wrap items-center gap-3">
           <a href="#projects" class="rounded-md bg-ink px-5 py-3 text-[15px] font-medium text-paper hover:bg-neutral-800">View projects</a>
-          <a href="mailto:sniphermarube@gmail.com" class="rounded-md border border-ink px-5 py-3 text-[15px] font-medium hover:bg-white">sniphermarube@gmail.com</a>
+          <a href="mailto:sniphermarube@gmail.com" class="rounded-md border border-ink px-5 py-3 text-[15px] font-medium hover:bg-white">Email me</a>
         </div>
-        <div class="mt-6 flex gap-5 font-mono text-sm text-neutral-600">
-          <a href="https://github.com/snipher-marube" target="_blank" rel="noopener noreferrer" class="hover:text-ink">GitHub</a>
-          <a href="https://www.linkedin.com/in/abel-marube-2653403a1" target="_blank" rel="noopener noreferrer" class="hover:text-ink">LinkedIn</a>
-          <a href="https://x.com/snipherdev" target="_blank" rel="noopener noreferrer" class="hover:text-ink">X</a>
+        <div class="mt-6 flex flex-wrap gap-x-5 gap-y-2 font-mono text-sm text-neutral-700">
+          <a href="https://github.com/snipher-marube" target="_blank" rel="noopener noreferrer" class="hover:text-ink">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+          <a href="https://www.linkedin.com/in/abel-marube-2653403a1" target="_blank" rel="noopener noreferrer" class="hover:text-ink">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
+          <a href="https://x.com/snipherdev" target="_blank" rel="noopener noreferrer" class="hover:text-ink">X<span class="sr-only"> (opens in a new tab)</span></a>
         </div>
       </div>
-      <img src="assets/img/snipher-marube.jpg" alt="Snipher Marube" width="800" height="800"
-           class="h-56 w-56 rounded-2xl border border-line object-cover sm:h-72 sm:w-72">
+      <img src="assets/img/snipher-marube-400.jpg"
+           srcset="assets/img/snipher-marube-400.jpg 400w, assets/img/snipher-marube.jpg 800w"
+           sizes="(min-width: 640px) 288px, 160px"
+           alt="Portrait of Snipher Marube" width="800" height="800" fetchpriority="high" decoding="async"
+           class="order-first h-40 w-40 rounded-2xl border border-line object-cover sm:h-56 sm:w-56 md:order-last md:h-72 md:w-72">
     </section>
 
     <!-- Numbers -->
     <section aria-label="At a glance" class="border-y border-line bg-white">
       <dl class="mx-auto grid max-w-page grid-cols-2 px-5 sm:px-8 md:grid-cols-4">
         <div class="py-7 pr-4">
-          <dt class="text-sm text-neutral-500">Platforms in production</dt>
+          <dt class="text-sm text-neutral-600">Platforms in production</dt>
           <dd class="mt-1 text-4xl font-semibold tabular-nums">6</dd>
         </div>
         <div class="border-l border-line py-7 pl-5 pr-4">
-          <dt class="text-sm text-neutral-500">Years with Python and Django</dt>
+          <dt class="text-sm text-neutral-600">Years with Python and Django</dt>
           <dd class="mt-1 text-4xl font-semibold tabular-nums">5</dd>
         </div>
         <div class="border-t border-line py-7 pr-4 md:border-l md:border-t-0 md:pl-5">
-          <dt class="text-sm text-neutral-500">Cut in API response time</dt>
+          <dt class="text-sm text-neutral-600">Cut in API response time</dt>
           <dd class="mt-1 text-4xl font-semibold tabular-nums">62%</dd>
         </div>
         <div class="border-l border-t border-line py-7 pl-5 pr-4 md:border-t-0">
-          <dt class="text-sm text-neutral-500">Fewer production bugs</dt>
+          <dt class="text-sm text-neutral-600">Fewer production bugs</dt>
           <dd class="mt-1 text-4xl font-semibold tabular-nums">25%</dd>
         </div>
       </dl>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="mx-auto max-w-page px-5 py-16 sm:px-8 md:py-20">
-      <h2 class="text-3xl font-bold tracking-tight">Projects</h2>
+    <section id="projects" class="mx-auto max-w-page px-5 py-16 sm:px-8 md:py-20" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="text-3xl font-bold tracking-tight">Projects</h2>
       <p class="mt-3 max-w-2xl text-neutral-600">
         Everything here is running on a real domain. Each entry shows my role, how the system
         is built and the stack it runs on.
@@ -90,16 +151,16 @@
         <article class="grid gap-4 py-8 md:grid-cols-[16rem_1fr] md:gap-10">
           <div>
             <h3 class="text-xl font-semibold">DawaTrack</h3>
-            <p class="mt-1 text-sm text-neutral-500">Health product traceability</p>
-            <a class="project-link mt-3 inline-block" href="https://dawatrack.com/" target="_blank" rel="noopener noreferrer">dawatrack.com</a>
+            <p class="mt-1 text-sm text-neutral-600">Health product traceability</p>
+            <a class="project-link mt-3 inline-block" href="https://dawatrack.com/" target="_blank" rel="noopener noreferrer">dawatrack.com<span class="sr-only"> (opens in a new tab)</span></a>
             <dl class="mt-4 space-y-2 text-sm">
-              <div><dt class="text-neutral-500">Role</dt><dd class="font-medium">Founder and sole engineer</dd></div>
-              <div><dt class="text-neutral-500">Status</dt><dd class="font-medium">National sandbox checks passed, Nov 2026</dd></div>
+              <div><dt class="text-neutral-600">Role</dt><dd class="font-medium">Founder and sole engineer</dd></div>
+              <div><dt class="text-neutral-600">Status</dt><dd class="font-medium">National sandbox checks passed, Nov 2026</dd></div>
             </dl>
           </div>
           <div class="text-neutral-700">
             <p>Reporting platform that submits medicine traceability events to Kenya's national Track &amp; Trace system for distributors, wholesalers, importers and pharmacy software vendors. GS1 DataMatrix reporting becomes mandatory in Kenya from January 2027.</p>
-            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-500">How it's built</h4>
+            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-600">How it's built</h4>
             <ul class="mt-2 list-disc space-y-2 pl-5 marker:text-moss-600">
               <li>One ingestion layer for four sources: SAP Business One, CSV uploads, a partner REST API and warehouse barcode scans. All of them are normalised into a single event model in PostgreSQL, so validation and reporting only have to be written once.</li>
               <li>Validation runs before anything leaves the system. GS1 identifiers (GTIN, SSCC, GLN) and DataMatrix fields are parsed and checked, and an incomplete event, such as one missing a GLN or expiry date, is held with a specific reason instead of being rejected by the national endpoint.</li>
@@ -115,16 +176,16 @@
         <article class="grid gap-4 py-8 md:grid-cols-[16rem_1fr] md:gap-10">
           <div>
             <h3 class="text-xl font-semibold">Waks.ai</h3>
-            <p class="mt-1 text-sm text-neutral-500">Voice and SMS access to local opportunities</p>
-            <a class="project-link mt-3 inline-block" href="https://waks.ai/" target="_blank" rel="noopener noreferrer">waks.ai</a>
+            <p class="mt-1 text-sm text-neutral-600">Voice and SMS access to local opportunities</p>
+            <a class="project-link mt-3 inline-block" href="https://waks.ai/" target="_blank" rel="noopener noreferrer">waks.ai<span class="sr-only"> (opens in a new tab)</span></a>
             <dl class="mt-4 space-y-2 text-sm">
-              <div><dt class="text-neutral-500">Role</dt><dd class="font-medium">Lead engineer, team project</dd></div>
-              <div><dt class="text-neutral-500">Status</dt><dd class="font-medium">Pilot live in Makadara, Nairobi, independently evaluated</dd></div>
+              <div><dt class="text-neutral-600">Role</dt><dd class="font-medium">Lead engineer, team project</dd></div>
+              <div><dt class="text-neutral-600">Status</dt><dd class="font-medium">Pilot live in Makadara, Nairobi, independently evaluated</dd></div>
             </dl>
           </div>
           <div class="text-neutral-700">
             <p>Connects young people in Makadara sub-county to catering courses, ward bursaries and local jobs over a plain phone call. No app, data bundle or airtime needed, and callers can speak Kiswahili, Sheng or English.</p>
-            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-500">How it's built</h4>
+            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-600">How it's built</h4>
             <ul class="mt-2 list-disc space-y-2 pl-5 marker:text-moss-600">
               <li>Two entry points, one flow. A USSD session or a missed call both hit Africa's Talking webhooks, which trigger a free toll-free callback. The user's session carries through from the menu to the call to the follow-up SMS with their options, fares and referral code.</li>
               <li>Answers are grounded in a reviewed catalogue. Every option a caller hears or receives must reference a catalogue entry, and a validator blocks any response without one before it is spoken or sent. The service cannot promise a bursary or job that does not exist.</li>
@@ -141,16 +202,16 @@
         <article class="grid gap-4 py-8 md:grid-cols-[16rem_1fr] md:gap-10">
           <div>
             <h3 class="text-xl font-semibold">BWI Digital Skills Academy</h3>
-            <p class="mt-1 text-sm text-neutral-500">Cohort-based learning platform</p>
-            <a class="project-link mt-3 inline-block" href="https://bwiacademy.com/" target="_blank" rel="noopener noreferrer">bwiacademy.com</a>
+            <p class="mt-1 text-sm text-neutral-600">Cohort-based learning platform</p>
+            <a class="project-link mt-3 inline-block" href="https://bwiacademy.com/" target="_blank" rel="noopener noreferrer">bwiacademy.com<span class="sr-only"> (opens in a new tab)</span></a>
             <dl class="mt-4 space-y-2 text-sm">
-              <div><dt class="text-neutral-500">Role</dt><dd class="font-medium">Lead engineer, team project</dd></div>
-              <div><dt class="text-neutral-500">Status</dt><dd class="font-medium">Platform live, first programmes in preparation</dd></div>
+              <div><dt class="text-neutral-600">Role</dt><dd class="font-medium">Lead engineer, team project</dd></div>
+              <div><dt class="text-neutral-600">Status</dt><dd class="font-medium">Platform live, first programmes in preparation</dd></div>
             </dl>
           </div>
           <div class="text-neutral-700">
             <p>Online academy for Blooming World International where learners work through project-based courses with a cohort, and mentors review real work instead of quiz scores.</p>
-            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-500">How it's built</h4>
+            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-600">How it's built</h4>
             <ul class="mt-2 list-disc space-y-2 pl-5 marker:text-moss-600">
               <li>Cohort scheduling drives access. Each cohort has its own start date, and modules unlock for the whole group week by week, so content access is computed from the learner's cohort rather than stored per learner.</li>
               <li>Project review is modelled as a state machine: submitted, approved, or returned for revision with written mentor feedback. Every transition is recorded, so learners and mentors can see the full history of a submission.</li>
@@ -166,16 +227,16 @@
         <article class="grid gap-4 py-8 md:grid-cols-[16rem_1fr] md:gap-10">
           <div>
             <h3 class="text-xl font-semibold">Blooming World International</h3>
-            <p class="mt-1 text-sm text-neutral-500">Non-profit website, East Africa</p>
-            <a class="project-link mt-3 inline-block" href="https://blwi.org/en/" target="_blank" rel="noopener noreferrer">blwi.org</a>
+            <p class="mt-1 text-sm text-neutral-600">Non-profit website, East Africa</p>
+            <a class="project-link mt-3 inline-block" href="https://blwi.org/en/" target="_blank" rel="noopener noreferrer">blwi.org<span class="sr-only"> (opens in a new tab)</span></a>
             <dl class="mt-4 space-y-2 text-sm">
-              <div><dt class="text-neutral-500">Role</dt><dd class="font-medium">Backend developer, Blooming World International</dd></div>
-              <div><dt class="text-neutral-500">Status</dt><dd class="font-medium">Live</dd></div>
+              <div><dt class="text-neutral-600">Role</dt><dd class="font-medium">Backend developer, Blooming World International</dd></div>
+              <div><dt class="text-neutral-600">Status</dt><dd class="font-medium">Live</dd></div>
             </dl>
           </div>
           <div class="text-neutral-700">
             <p>Public website for an African-led non-profit working on early childhood development, foundational literacy and numeracy, and youth skills across East Africa.</p>
-            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-500">How it's built</h4>
+            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-600">How it's built</h4>
             <ul class="mt-2 list-disc space-y-2 pl-5 marker:text-moss-600">
               <li>Eight languages served from one codebase. URLs are prefixed by locale (<code class="font-mono text-sm">/en/</code>, <code class="font-mono text-sm">/sw/</code> and so on), and content models carry a translation per language so editors can publish without touching code.</li>
               <li>Staff manage projects, research and policy papers, impact reports and news through a custom admin, with reports and publications grouped so they can be filtered by theme and year.</li>
@@ -190,16 +251,16 @@
         <article class="grid gap-4 py-8 md:grid-cols-[16rem_1fr] md:gap-10">
           <div>
             <h3 class="text-xl font-semibold">Agrotech Plus</h3>
-            <p class="mt-1 text-sm text-neutral-500">Farm-to-buyer market access, Kenya</p>
-            <a class="project-link mt-3 inline-block" href="https://agrotekplus.com/" target="_blank" rel="noopener noreferrer">agrotekplus.com</a>
+            <p class="mt-1 text-sm text-neutral-600">Farm-to-buyer market access, Kenya</p>
+            <a class="project-link mt-3 inline-block" href="https://agrotekplus.com/" target="_blank" rel="noopener noreferrer">agrotekplus.com<span class="sr-only"> (opens in a new tab)</span></a>
             <dl class="mt-4 space-y-2 text-sm">
-              <div><dt class="text-neutral-500">Role</dt><dd class="font-medium">Full-stack developer</dd></div>
-              <div><dt class="text-neutral-500">Status</dt><dd class="font-medium">Live</dd></div>
+              <div><dt class="text-neutral-600">Role</dt><dd class="font-medium">Full-stack developer</dd></div>
+              <div><dt class="text-neutral-600">Status</dt><dd class="font-medium">Live</dd></div>
             </dl>
           </div>
           <div class="text-neutral-700">
             <p>Platform for an agricultural company that collects produce at the farm gate, grades it and sells it to verified buyers without brokers.</p>
-            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-500">How it's built</h4>
+            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-600">How it's built</h4>
             <ul class="mt-2 list-disc space-y-2 pl-5 marker:text-moss-600">
               <li>One account model for farmers and buyers. A user can register as a farmer, a buyer or both, and each role gets its own onboarding form and profile fields.</li>
               <li>Registrations land in an admin dashboard where the team verifies farmers and buyers before they are matched.</li>
@@ -214,16 +275,16 @@
         <article class="grid gap-4 py-8 md:grid-cols-[16rem_1fr] md:gap-10">
           <div>
             <h3 class="text-xl font-semibold">SokoFarm</h3>
-            <p class="mt-1 text-sm text-neutral-500">Agri-inputs for farmers, Kenya</p>
-            <a class="project-link mt-3 inline-block" href="https://www.sokofarm.com/" target="_blank" rel="noopener noreferrer">sokofarm.com</a>
+            <p class="mt-1 text-sm text-neutral-600">Agri-inputs for farmers, Kenya</p>
+            <a class="project-link mt-3 inline-block" href="https://www.sokofarm.com/" target="_blank" rel="noopener noreferrer">sokofarm.com<span class="sr-only"> (opens in a new tab)</span></a>
             <dl class="mt-4 space-y-2 text-sm">
-              <div><dt class="text-neutral-500">Role</dt><dd class="font-medium">Full-stack developer</dd></div>
-              <div><dt class="text-neutral-500">Status</dt><dd class="font-medium">Live</dd></div>
+              <div><dt class="text-neutral-600">Role</dt><dd class="font-medium">Full-stack developer</dd></div>
+              <div><dt class="text-neutral-600">Status</dt><dd class="font-medium">Live</dd></div>
             </dl>
           </div>
           <div class="text-neutral-700">
             <p>The agri-inputs arm of the Agrotech Plus group, where farmers browse and order inputs for the season. It runs on its own domain and is linked from the Agrotech Plus solutions catalogue.</p>
-            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-500">How it's built</h4>
+            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-600">How it's built</h4>
             <ul class="mt-2 list-disc space-y-2 pl-5 marker:text-moss-600">
               <li>Product catalogue organised by input category, with stock and pricing managed by staff through the admin.</li>
               <li>Order requests are captured on the site and routed to the team for confirmation and delivery.</li>
@@ -239,16 +300,16 @@
     </section>
 
     <!-- Open source -->
-    <section id="open-source" class="border-t border-line">
+    <section id="open-source" class="border-t border-line" aria-labelledby="open-source-heading">
       <div class="mx-auto max-w-page px-5 py-16 sm:px-8 md:py-20">
-        <h2 class="text-3xl font-bold tracking-tight">Open source</h2>
+        <h2 id="open-source-heading" class="text-3xl font-bold tracking-tight">Open source</h2>
         <article class="mt-8 grid gap-4 md:grid-cols-[16rem_1fr] md:gap-10">
           <div>
             <h3 class="text-xl font-semibold">codespaces-django</h3>
-            <p class="mt-1 text-sm text-neutral-500">GitHub's official Django template for Codespaces</p>
-            <a class="project-link mt-3 inline-block" href="https://github.com/github/codespaces-django" target="_blank" rel="noopener noreferrer">github/codespaces-django</a>
+            <p class="mt-1 text-sm text-neutral-600">GitHub's official Django template for Codespaces</p>
+            <a class="project-link mt-3 inline-block" href="https://github.com/github/codespaces-django" target="_blank" rel="noopener noreferrer">github/codespaces-django<span class="sr-only"> (opens in a new tab)</span></a>
             <dl class="mt-4 space-y-2 text-sm">
-              <div><dt class="text-neutral-500">Role</dt><dd class="font-medium">Contributor, 2023 to 2024</dd></div>
+              <div><dt class="text-neutral-600">Role</dt><dd class="font-medium">Contributor, 2023 to 2024</dd></div>
             </dl>
           </div>
           <div class="text-neutral-700">
@@ -258,51 +319,51 @@
               <li>Added static and media file serving so new projects handle assets correctly out of the box.</li>
               <li>Kept dependencies current with requirements updates.</li>
             </ul>
-            <a class="project-link mt-5 inline-block" href="https://github.com/github/codespaces-django/commits?author=snipher-marube" target="_blank" rel="noopener noreferrer">View my commits</a>
+            <a class="project-link mt-5 inline-block" href="https://github.com/github/codespaces-django/commits?author=snipher-marube" target="_blank" rel="noopener noreferrer">View my commits<span class="sr-only"> (opens in a new tab)</span></a>
           </div>
         </article>
       </div>
     </section>
 
     <!-- Stack -->
-    <section id="stack" class="border-t border-line bg-white">
+    <section id="stack" class="border-t border-line bg-white" aria-labelledby="stack-heading">
       <div class="mx-auto max-w-page px-5 py-16 sm:px-8 md:py-20">
-        <h2 class="text-3xl font-bold tracking-tight">Stack</h2>
+        <h2 id="stack-heading" class="text-3xl font-bold tracking-tight">Stack</h2>
         <p class="mt-3 max-w-2xl text-neutral-600">What I use to build, ship and run these projects.</p>
 
         <dl class="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
           <div>
-            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-500">Backend</dt>
+            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-600">Backend</dt>
             <dd class="mt-3 flex flex-wrap gap-2">
               <span class="tag">Python</span><span class="tag">Django</span><span class="tag">Django REST Framework</span>
             </dd>
           </div>
           <div>
-            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-500">Databases</dt>
+            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-600">Databases</dt>
             <dd class="mt-3 flex flex-wrap gap-2">
               <span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">Redis</span>
             </dd>
           </div>
           <div>
-            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-500">Background jobs</dt>
+            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-600">Background jobs</dt>
             <dd class="mt-3 flex flex-wrap gap-2">
               <span class="tag">Celery</span><span class="tag">Celery Beat</span><span class="tag">Redis broker</span>
             </dd>
           </div>
           <div>
-            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-500">Frontend</dt>
+            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-600">Frontend</dt>
             <dd class="mt-3 flex flex-wrap gap-2">
               <span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">Tailwind CSS</span>
             </dd>
           </div>
           <div>
-            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-500">CI/CD and deployment</dt>
+            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-600">CI/CD and deployment</dt>
             <dd class="mt-3 flex flex-wrap gap-2">
               <span class="tag">GitHub Actions</span><span class="tag">Linux VPS</span><span class="tag">Vercel</span><span class="tag">Heroku</span><span class="tag">Supabase</span>
             </dd>
           </div>
           <div>
-            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-500">Monitoring</dt>
+            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-600">Monitoring</dt>
             <dd class="mt-3 flex flex-wrap gap-2">
               <span class="tag">Sentry</span>
             </dd>
@@ -312,10 +373,10 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="border-t border-line">
+    <section id="contact" class="border-t border-line" aria-labelledby="contact-heading">
       <div class="mx-auto grid max-w-page gap-10 px-5 py-16 sm:px-8 md:grid-cols-2 md:py-20">
         <div>
-          <h2 class="text-3xl font-bold tracking-tight">Contact</h2>
+          <h2 id="contact-heading" class="text-3xl font-bold tracking-tight">Contact</h2>
           <p class="mt-3 max-w-md text-neutral-600">
             Open to backend and full-stack roles, and to freelance builds for businesses and NGOs.
             Email is the fastest way to reach me.
@@ -323,24 +384,24 @@
         </div>
         <ul class="divide-y divide-line border-y border-line text-[15px]">
           <li class="flex flex-wrap justify-between gap-2 py-4">
-            <span class="text-neutral-500">Email</span>
-            <a href="mailto:sniphermarube@gmail.com" class="font-medium hover:text-moss-700">sniphermarube@gmail.com</a>
+            <span class="text-neutral-600">Email</span>
+            <a href="mailto:sniphermarube@gmail.com" class="font-medium [overflow-wrap:anywhere] hover:text-moss-700">sniphermarube@gmail.com</a>
           </li>
           <li class="flex flex-wrap justify-between gap-2 py-4">
-            <span class="text-neutral-500">Phone</span>
-            <a href="tel:+254798393182" class="font-medium hover:text-moss-700">+254 798 393 182</a>
+            <span class="text-neutral-600">Phone</span>
+            <a href="tel:+254798393182" aria-label="Call +254 798 393 182" class="font-medium hover:text-moss-700">+254 798 393 182</a>
           </li>
           <li class="flex flex-wrap justify-between gap-2 py-4">
-            <span class="text-neutral-500">GitHub</span>
-            <a href="https://github.com/snipher-marube" target="_blank" rel="noopener noreferrer" class="font-medium hover:text-moss-700">snipher-marube</a>
+            <span class="text-neutral-600">GitHub</span>
+            <a href="https://github.com/snipher-marube" target="_blank" rel="noopener noreferrer" class="font-medium hover:text-moss-700">snipher-marube<span class="sr-only"> (opens in a new tab)</span></a>
           </li>
           <li class="flex flex-wrap justify-between gap-2 py-4">
-            <span class="text-neutral-500">LinkedIn</span>
-            <a href="https://www.linkedin.com/in/abel-marube-2653403a1" target="_blank" rel="noopener noreferrer" class="font-medium hover:text-moss-700">Snipher Marube</a>
+            <span class="text-neutral-600">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/abel-marube-2653403a1" target="_blank" rel="noopener noreferrer" class="font-medium hover:text-moss-700">Snipher Marube<span class="sr-only"> (opens in a new tab)</span></a>
           </li>
           <li class="flex flex-wrap justify-between gap-2 py-4">
-            <span class="text-neutral-500">X</span>
-            <a href="https://x.com/snipherdev" target="_blank" rel="noopener noreferrer" class="font-medium hover:text-moss-700">@snipherdev</a>
+            <span class="text-neutral-600">X</span>
+            <a href="https://x.com/snipherdev" target="_blank" rel="noopener noreferrer" class="font-medium hover:text-moss-700">@snipherdev<span class="sr-only"> (opens in a new tab)</span></a>
           </li>
         </ul>
       </div>
@@ -348,7 +409,7 @@
   </main>
 
   <footer class="border-t border-line">
-    <div class="mx-auto flex max-w-page flex-wrap justify-between gap-2 px-5 py-6 font-mono text-xs text-neutral-500 sm:px-8">
+    <div class="mx-auto flex max-w-page flex-wrap justify-between gap-2 px-5 py-6 font-mono text-xs text-neutral-600 sm:px-8">
       <span>&copy; <span id="year">2026</span> Snipher Marube</span>
     </div>
   </footer>
