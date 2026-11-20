@@ -142,10 +142,23 @@
             <h3 class="text-xl font-semibold">BWI Digital Skills Academy</h3>
             <p class="mt-1 text-sm text-neutral-500">Cohort-based learning platform</p>
             <a class="project-link mt-3 inline-block" href="https://bwiacademy.com/" target="_blank" rel="noopener noreferrer">bwiacademy.com</a>
+            <dl class="mt-4 space-y-2 text-sm">
+              <div><dt class="text-neutral-500">Role</dt><dd class="font-medium">Lead engineer, team project</dd></div>
+              <div><dt class="text-neutral-500">Status</dt><dd class="font-medium">Platform live, first programmes in preparation</dd></div>
+            </dl>
           </div>
           <div class="text-neutral-700">
-            <p>Online academy where learners work through project-based courses with a cohort. Modules unlock weekly for the whole group.</p>
-            <p class="mt-3">Learners submit projects, and mentors either approve them or send them back with written feedback. A certificate is issued only once every lesson and assessment is complete. Learners can publish a portfolio of approved work (private by default), and experienced learners can apply to mentor.</p>
+            <p>Online academy for Blooming World International where learners work through project-based courses with a cohort, and mentors review real work instead of quiz scores.</p>
+            <h4 class="mt-5 font-mono text-xs uppercase tracking-wider text-neutral-500">How it's built</h4>
+            <ul class="mt-2 list-disc space-y-2 pl-5 marker:text-moss-600">
+              <li>Cohort scheduling drives access. Each cohort has its own start date, and modules unlock for the whole group week by week, so content access is computed from the learner's cohort rather than stored per learner.</li>
+              <li>Project review is modelled as a state machine: submitted, approved, or returned for revision with written mentor feedback. Every transition is recorded, so learners and mentors can see the full history of a submission.</li>
+              <li>Certificates are issued only when every lesson is complete and every assessment has passed. The check runs on the server, so a certificate cannot be generated from a partial record.</li>
+              <li>Role-based access for learners, mentors and admins, including an application flow for experienced learners to become mentors. Learner portfolios are private by default and published only by the learner.</li>
+            </ul>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="tag">Django</span><span class="tag">PostgreSQL</span><span class="tag">Celery</span><span class="tag">Redis</span><span class="tag">Tailwind CSS</span>
+            </div>
           </div>
         </article>
 
