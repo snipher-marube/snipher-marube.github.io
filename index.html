@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abel Marube | Full-stack Software Engineer</title>
+  <meta name="description" content="Abel (Snipher) Marube, full-stack software engineer in Nairobi. Python, Django, PostgreSQL, Celery and Redis. Six platforms built and running in production.">
+  <meta property="og:title" content="Abel Marube | Full-stack Software Engineer">
+  <meta property="og:description" content="Python and Django engineer in Nairobi. Six platforms built and running in production.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/abel-marube.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111a17'/%3E%3Ctext x='16' y='21.5' font-family='monospace' font-size='14' font-weight='700' fill='%23f6f7f4' text-anchor='middle'%3EAM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="border-b border-line">
+    <div class="mx-auto flex max-w-page flex-wrap items-center justify-between gap-4 px-5 py-5 sm:px-8">
+      <a href="#" class="font-mono text-[15px] font-medium">abel.marube</a>
+      <nav aria-label="Main" class="flex gap-6 text-[15px] text-neutral-600">
+        <a href="#projects" class="hover:text-ink">Projects</a>
+        <a href="#stack" class="hover:text-ink">Stack</a>
+        <a href="#contact" class="hover:text-ink">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Intro -->
+    <section class="mx-auto grid max-w-page items-center gap-10 px-5 pb-14 pt-12 sm:px-8 md:grid-cols-[1fr_auto] md:gap-16 md:pt-20">
+      <div>
+        <p class="font-mono text-sm text-moss-700">Full-stack software engineer, Nairobi</p>
+        <h1 class="mt-4 text-5xl font-bold tracking-tight sm:text-6xl">Abel Marube</h1>
+        <p class="mt-1 text-lg text-neutral-500">Snipher, on most of the internet</p>
+        <p class="mt-6 max-w-xl text-lg leading-relaxed text-neutral-700">
+          I build web platforms with Python and Django and keep them running in production.
+          Most of my work sits on the backend: data models, REST APIs, background jobs,
+          deployment pipelines and the Linux servers underneath. Each of the six projects
+          below was built from scratch and deployed by me.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center gap-3">
+          <a href="#projects" class="rounded-md bg-ink px-5 py-3 text-[15px] font-medium text-paper hover:bg-neutral-800">View projects</a>
+          <a href="mailto:sniphermarube@gmail.com" class="rounded-md border border-ink px-5 py-3 text-[15px] font-medium hover:bg-white">sniphermarube@gmail.com</a>
+        </div>
+        <div class="mt-6 flex gap-5 font-mono text-sm text-neutral-600">
+          <a href="https://github.com/snipher-marube" class="hover:text-ink">GitHub</a>
+          <a href="https://www.linkedin.com/in/abel-marube-2653403a1" class="hover:text-ink">LinkedIn</a>
+        </div>
+      </div>
+      <img src="assets/img/abel-marube.jpg" alt="Abel Marube" width="800" height="800"
+           class="h-56 w-56 rounded-2xl border border-line object-cover sm:h-72 sm:w-72">
+    </section>
+
+    <!-- Numbers -->
+    <section aria-label="At a glance" class="border-y border-line bg-white">
+      <dl class="mx-auto grid max-w-page grid-cols-2 px-5 sm:px-8 md:grid-cols-4">
+        <div class="py-7 pr-4">
+          <dt class="text-sm text-neutral-500">Platforms in production</dt>
+          <dd class="mt-1 text-4xl font-semibold tabular-nums">6</dd>
+        </div>
+        <div class="border-l border-line py-7 pl-5 pr-4">
+          <dt class="text-sm text-neutral-500">Years with Python and Django</dt>
+          <dd class="mt-1 text-4xl font-semibold tabular-nums">5</dd>
+        </div>
+        <div class="border-t border-line py-7 pr-4 md:border-l md:border-t-0 md:pl-5">
+          <dt class="text-sm text-neutral-500">Cut in API response time</dt>
+          <dd class="mt-1 text-4xl font-semibold tabular-nums">62%</dd>
+        </div>
+        <div class="border-l border-t border-line py-7 pl-5 pr-4 md:border-t-0">
+          <dt class="text-sm text-neutral-500">Fewer production bugs</dt>
+          <dd class="mt-1 text-4xl font-semibold tabular-nums">25%</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mx-auto max-w-page px-5 py-16 sm:px-8 md:py-20">
+      <h2 class="text-3xl font-bold tracking-tight">Projects</h2>
+      <p class="mt-3 max-w-2xl text-neutral-600">
+        Everything here is running on a real domain. I handled the full build on each:
+        requirements, database design, backend, frontend, hosting and maintenance after launch.
+      </p>
+
+      <div class="mt-10 divide-y divide-line border-y border-line">
+
+        <article class="grid gap-4 py-8 md:grid-cols-[16rem_1fr] md:gap-10">
+          <div>
+            <h3 class="text-xl font-semibold">DawaTrack</h3>
+            <p class="mt-1 text-sm text-neutral-500">Health product traceability</p>
+            <a class="project-link mt-3 inline-block" href="https://dawatrack.com/">dawatrack.com</a>
+            <p class="mt-2 text-sm text-neutral-500">Founder. Sandbox-verified, Nov 2026</p>
+          </div>
+          <div class="text-neutral-700">
+            <p>Reporting platform that submits medicine traceability events to Kenya's national Track &amp; Trace system on behalf of distributors, wholesalers, importers and pharmacy software vendors.</p>
+            <p class="mt-3">Events come in from SAP Business One, CSV uploads, a partner API or warehouse scans. Each one is validated before submission, and anything incomplete (a missing GLN or expiry date, for example) is held with the reason attached. Submissions use GS1 EPCIS 2.0 and every response from the national system is stored.</p>
+          </div>
+        </article>
+
+        <article class="grid gap-4 py-8 md:grid-cols-[16rem_1fr] md:gap-10">
+          <div>
+            <h3 class="text-xl font-semibold">Waks.ai</h3>
+            <p class="mt-1 text-sm text-neutral-500">Voice and SMS access to local opportunities</p>
+            <a class="project-link mt-3 inline-block" href="https://waks.ai/">waks.ai</a>
+            <p class="mt-2 text-sm text-neutral-500">Pilot live in Makadara, Nairobi</p>
+          </div>
+          <div class="text-neutral-700">
+            <p>Connects young people to catering courses, ward bursaries and local jobs over a plain phone call. No app, data bundle or airtime needed.</p>
+            <p class="mt-3">A user dials a USSD code or gives a missed call, gets a free callback, and can talk in Kiswahili, Sheng or English. They then receive an SMS with matching options, fares and an anonymous referral code. Answers come only from a reviewed catalogue, and a validator rejects any response that doesn't cite a catalogue entry.</p>
+          </div>
+        </article>
+
+        <article class="grid gap-4 py-8 md:grid-cols-[16rem_1fr] md:gap-10">
+          <div>
+            <h3 class="text-xl font-semibold">BWI Digital Skills Academy</h3>
+            <p class="mt-1 text-sm text-neutral-500">Cohort-based learning platform</p>
+            <a class="project-link mt-3 inline-block" href="https://bwiacademy.com/">bwiacademy.com</a>
+          </div>
+          <div class="text-neutral-700">
+            <p>Online academy where learners work through project-based courses with a cohort. Modules unlock weekly for the whole group.</p>
+            <p class="mt-3">Learners submit projects, and mentors either approve them or send them back with written feedback. A certificate is issued only once every lesson and assessment is complete. Learners can publish a portfolio of approved work (private by default), and experienced learners can apply to mentor.</p>
+          </div>
+        </article>
+
+        <article class="grid gap-4 py-8 md:grid-cols-[16rem_1fr] md:gap-10">
+          <div>
+            <h3 class="text-xl font-semibold">Blooming World International</h3>
+            <p class="mt-1 text-sm text-neutral-500">Non-profit website</p>
+            <a class="project-link mt-3 inline-block" href="https://blwi.org/en/">blwi.org</a>
+          </div>
+          <div class="text-neutral-700">
+            <p>Website for an African-led non-profit working on early childhood development, foundational literacy and numeracy, and youth skills across East Africa.</p>
+            <p class="mt-3">Content is served in eight languages and covers research and policy, impact reports, project pages, news, and donor and partner information. It also includes a whistleblowing channel.</p>
+          </div>
+        </article>
+
+        <article class="grid gap-4 py-8 md:grid-cols-[16rem_1fr] md:gap-10">
+          <div>
+            <h3 class="text-xl font-semibold">Agrotech Plus</h3>
+            <p class="mt-1 text-sm text-neutral-500">Farm-to-buyer market access</p>
+            <a class="project-link mt-3 inline-block" href="https://agrotekplus.com/">agrotekplus.com</a>
+          </div>
+          <div class="text-neutral-700">
+            <p>Platform for an agricultural company that collects produce at the farm gate, grades it and sells it to verified buyers without brokers.</p>
+            <p class="mt-3">Farmers and buyers register through the site (as either or both). It also covers the company's solar cold storage, irrigation and drying services, field advisories, annual reports and volunteer programme.</p>
+          </div>
+        </article>
+
+        <article class="grid gap-4 py-8 md:grid-cols-[16rem_1fr] md:gap-10">
+          <div>
+            <h3 class="text-xl font-semibold">SokoFarm</h3>
+            <p class="mt-1 text-sm text-neutral-500">Agri-inputs for farmers</p>
+            <a class="project-link mt-3 inline-block" href="https://www.sokofarm.com/">sokofarm.com</a>
+          </div>
+          <div class="text-neutral-700">
+            <p>The agri-inputs arm of the Agrotech Plus group, where farmers find and order inputs for the season. Built and deployed on its own domain and linked from the Agrotech Plus solutions catalogue.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack" class="border-t border-line bg-white">
+      <div class="mx-auto max-w-page px-5 py-16 sm:px-8 md:py-20">
+        <h2 class="text-3xl font-bold tracking-tight">Stack</h2>
+        <p class="mt-3 max-w-2xl text-neutral-600">What I use to build, ship and run these projects.</p>
+
+        <dl class="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div>
+            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-500">Backend</dt>
+            <dd class="mt-3 flex flex-wrap gap-2">
+              <span class="tag">Python</span><span class="tag">Django</span><span class="tag">Django REST Framework</span>
+            </dd>
+          </div>
+          <div>
+            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-500">Databases</dt>
+            <dd class="mt-3 flex flex-wrap gap-2">
+              <span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">Redis</span>
+            </dd>
+          </div>
+          <div>
+            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-500">Background jobs</dt>
+            <dd class="mt-3 flex flex-wrap gap-2">
+              <span class="tag">Celery</span><span class="tag">Celery Beat</span><span class="tag">Redis broker</span>
+            </dd>
+          </div>
+          <div>
+            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-500">Frontend</dt>
+            <dd class="mt-3 flex flex-wrap gap-2">
+              <span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">Tailwind CSS</span>
+            </dd>
+          </div>
+          <div>
+            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-500">CI/CD and deployment</dt>
+            <dd class="mt-3 flex flex-wrap gap-2">
+              <span class="tag">GitHub Actions</span><span class="tag">Linux VPS</span><span class="tag">Vercel</span><span class="tag">Heroku</span><span class="tag">Supabase</span>
+            </dd>
+          </div>
+          <div>
+            <dt class="font-mono text-xs uppercase tracking-wider text-neutral-500">Monitoring</dt>
+            <dd class="mt-3 flex flex-wrap gap-2">
+              <span class="tag">Sentry</span>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="border-t border-line">
+      <div class="mx-auto grid max-w-page gap-10 px-5 py-16 sm:px-8 md:grid-cols-2 md:py-20">
+        <div>
+          <h2 class="text-3xl font-bold tracking-tight">Contact</h2>
+          <p class="mt-3 max-w-md text-neutral-600">
+            Open to backend and full-stack roles, and to freelance builds for businesses and NGOs.
+            Email is the fastest way to reach me.
+          </p>
+        </div>
+        <ul class="divide-y divide-line border-y border-line text-[15px]">
+          <li class="flex flex-wrap justify-between gap-2 py-4">
+            <span class="text-neutral-500">Email</span>
+            <a href="mailto:sniphermarube@gmail.com" class="font-medium hover:text-moss-700">sniphermarube@gmail.com</a>
+          </li>
+          <li class="flex flex-wrap justify-between gap-2 py-4">
+            <span class="text-neutral-500">Phone</span>
+            <a href="tel:+254798393182" class="font-medium hover:text-moss-700">+254 798 393 182</a>
+          </li>
+          <li class="flex flex-wrap justify-between gap-2 py-4">
+            <span class="text-neutral-500">GitHub</span>
+            <a href="https://github.com/snipher-marube" class="font-medium hover:text-moss-700">snipher-marube</a>
+          </li>
+          <li class="flex flex-wrap justify-between gap-2 py-4">
+            <span class="text-neutral-500">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/abel-marube-2653403a1" class="font-medium hover:text-moss-700">abel-marube</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-line">
+    <div class="mx-auto flex max-w-page flex-wrap justify-between gap-2 px-5 py-6 font-mono text-xs text-neutral-500 sm:px-8">
+      <span>&copy; <span id="year">2026</span> Abel Marube</span>
+      <span>HTML + Tailwind CSS, hosted on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+  a:focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-moss-600 rounded-sm;
+  }
+}
+
+@layer components {
+  .tag {
+    @apply inline-block rounded border border-line bg-white px-2.5 py-1 text-sm text-ink;
+  }
+  .project-link {
+    @apply font-mono text-sm text-moss-700 underline decoration-line underline-offset-4 hover:decoration-moss-600;
+  }
+}
